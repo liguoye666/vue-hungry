@@ -75,7 +75,7 @@
 </template>
 
 <script>
-  import {getGoods} from 'api'
+  import { getGoods } from 'api'
   import ShopCart from 'components/shop-cart/shop-cart'
   import CartControl from 'components/cart-control/cart-control'
   import SupportIco from 'components/support-ico/support-ico'
@@ -119,7 +119,7 @@
       barTxts() {
         let ret = []
         this.goods.forEach((good) => {
-          const {type, name, foods} = good
+          const { type, name, foods } = good
           let count = 0
           foods.forEach((food) => {
             count += food.count || 0
